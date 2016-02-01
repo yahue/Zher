@@ -8,7 +8,8 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 class Zher extends Component {
@@ -24,6 +25,11 @@ class Zher extends Component {
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
+        <Image style={styles.imagestyle} source={{uri: 'https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png'}} >
+        <Text style={styles.welcome}>
+          Baidu
+        </Text>
+        </Image>
       </View>
     );
   }
@@ -45,6 +51,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  imagestyle:{
+     width:300,
+    
+     height:100, 
   },
 });
 
