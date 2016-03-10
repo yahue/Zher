@@ -53,7 +53,7 @@ export default class App extends Component {
           <IconWithBar label="新闻" type={glypy.Home} from={'icomoon'}/>
           <RawContent>
             <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center', justifyContent:'center' }}>
-              <Text onPress={()=>this.tabbarToggle()}>好友这儿动弹</Text>
+              <Text onPress={()=>this.tabbarToggle()}>好友友这儿动弹</Text>
             </View>
           </RawContent>
         </Tab>
