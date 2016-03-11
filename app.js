@@ -1,6 +1,8 @@
 import React, { Component, View, Text, ScrollView } from 'react-native';
 import Tabbar, { Tab, RawContent, IconWithBar, glypyMapMaker } from 'react-native-tabbar';
 
+import ScrollViewSimpleExample from './scrollviewsimple';
+
 const glypy = glypyMapMaker({
   Home: 'e900',
   Camera: 'e901',
@@ -52,9 +54,9 @@ export default class App extends Component {
         <Tab name="home">
           <IconWithBar label="新闻" type={glypy.Home} from={'icomoon'}/>
           <RawContent>
-            <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center', justifyContent:'center' }}>
-              <Text onPress={()=>this.tabbarToggle()}>好友友这儿动弹</Text>
-            </View>
+          <ScrollViewSimpleExample>
+          </ScrollViewSimpleExample>
+           
           </RawContent>
         </Tab>
         <Tab name="camera">
