@@ -56,7 +56,6 @@ export default class App extends Component {
           <RawContent>
           <ScrollViewSimpleExample>
           </ScrollViewSimpleExample>
-           
           </RawContent>
         </Tab>
         <Tab name="camera">
