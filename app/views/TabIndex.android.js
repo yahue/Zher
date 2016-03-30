@@ -16,15 +16,33 @@ import Icon from 'react-native-vector-icons/Ionicons';
 var TabArr = [
     {
         key: 0,
-        title: '资讯',
+        title: '首页',
+        icon: 'ios-home-outline',
+        selectedIcon:'ios-home',
+    },
+    {
+        key: 1,
+        title: '社区',
+        icon: 'ios-paper-outline',
+        selectedIcon:'ios-paper',
+    },
+      {
+        key: 2,
+        title: '发现',
+        icon: 'ios-people-outline',
+        selectedIcon:'ios-people',
+    },
+      {
+        key: 3,
+        title: '消息',
         icon: 'ios-list-outline',
         selectedIcon:'ios-list',
     },
     {
-        key: 1,
-        title: '收藏',
-        icon: 'ios-paper-outline',
-        selectedIcon:'ios-paper',
+        key: 4,
+        title: '我的',
+        icon: 'ios-people-outline',
+        selectedIcon:'ios-people',
     },
 ];
 
@@ -48,7 +66,7 @@ class TabBar extends React.Component {
                     if(tabItem.key === 0) {
                       this.props.navigator.pop();
                     } else {
-                      this.props.navigator.push(TabArr[1]);
+                      this.props.navigator.push(tabItem);
                     }
                   }
                 }}
@@ -88,6 +106,15 @@ export default class TabIndex extends React.Component{
             break;
           case 1:
             return <User pnav={this.props.pnav} starDatas={this.props.starDatas} />;
+            break;
+             case 2:
+            return <News pnav={this.props.pnav} starDatas={this.props.starDatas} />;
+            break;
+             case 3:
+            return <User pnav={this.props.pnav} starDatas={this.props.starDatas} />;
+            break;
+              case 4:
+            return <News pnav={this.props.pnav} starDatas={this.props.starDatas} />;
             break;
         }
     }

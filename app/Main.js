@@ -89,7 +89,7 @@ export default class Main extends React.Component {
                   routeMapper={{
                       LeftButton: this.LeftButton,
                       RightButton: this.RightButton,
-                      Title: this.Title
+                      Title: this.Title 
                   }}
                   style={styles.navBar}
                 />;

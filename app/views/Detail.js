@@ -22,7 +22,7 @@ export default class Detail extends React.Component{
         <View style={{flex:1}}>
             <View style={styles.content}>
               <WebView
-              source={{uri: "http://m.yergoo.com/api/news/app/" + this.props.id}}
+              source={{uri: "http://www.baidu.com"}}
               automaticallyAdjustContentInset={false}
               contentInset={{top:20,left:0,bottom:20,right:0}}
               startInLoadingState={true}
